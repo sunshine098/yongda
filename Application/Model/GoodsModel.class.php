@@ -33,6 +33,6 @@ class GoodsModel extends Model {
      * 此处可以接收到控制器传过来的$_POST和$_FILES
      */
     public function insert(){
-        
+        echo '你好';
     }
 }

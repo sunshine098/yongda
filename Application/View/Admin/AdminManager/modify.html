@@ -6,6 +6,35 @@
         <meta name="viewport" content="width=device-width">
     </head>
     <body>
-        <div>管理员修改信息!</div>
+        <form action="index.php?p=Admin&c=AdminManager&a=modify" method="post">
+            <table>
+                <tr>
+                    <td>原密码:</td>
+                    <td>
+                        <input type="text" name="prePwd" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>新密码:</td>
+                    <td>
+                        <input type="password" name="newPwd" />
+                    </td>
+                </tr>
+                 <tr>
+                    <td>确认密码:</td>
+                    <td>
+                        <input type="password" name="confirmPwd" />
+                    </td>
+                    <td>
+                          <input type="hidden" name="id" value="123" />
+                    </td>
+                </tr>
+              
+                <tr>
+                    <td><input  type="submit"  value="确定" /></td>
+                    <td><input  type="reset" value="重置" /></td>
+                </tr>
+            </table>
+        </form>
     </body>
 </html>

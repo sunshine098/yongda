@@ -10,8 +10,11 @@
             <tr height=56>
                 <td width=260><img height=56 src="Public/Admin/images/header_left.jpg" 
                                    width=260></td>
-                <td style="font-weight: bold; color: #fff; padding-top: 20px" 
-                    align=middle>当前用户：<?php echo $_COOKIE['username']?>&nbsp;&nbsp; <a style="color: #fff" href="index.php?p=Admin&c=AdminManager&a=modify" target=main>修改信息</a> &nbsp;&nbsp; <a style="color: #fff" href="index.php?p=Admin&c=AdminManager&a=exitSystem" target=_top>退出系统</a> 
+                <td style="font-weight: bold; color: #fff; padding-top: 20px" align=middle>
+                    当前用户：<?php echo $_COOKIE['username']?>&nbsp;&nbsp; 
+                    <a style="color: #fff" href="index.php?p=Admin&c=AdminManager&a=showModify" target="right">修改密码</a>&nbsp;&nbsp;
+                    <a style="color: #fff" href="index.php?p=Admin&c=Index&a=index" target=_top>回到首页</a>&nbsp;&nbsp;
+                    <a style="color: #fff" href="index.php?p=Admin&c=AdminManager&a=exitSystem" target=_top>退出系统</a> 
                 </td>
                 <td align=right width=268><img height=56 
                                                src="Public/Admin/images/header_right.jpg" width=268></td></tr></table>

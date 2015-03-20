@@ -29,7 +29,7 @@ CREATE TABLE `session` (
 
 /*Data for the table `session` */
 
-insert  into `session`(`sess_id`,`sess_data`,`last_modified`) values ('oquf3jt4b2tufeou14ic2nult4','randomString|s:4:\"HWGR\";isLogin|s:3:\"yes\";',1426781794),('pc2b7muk1bf707iflokefsrb72','',1426781793);
+insert  into `session`(`sess_id`,`sess_data`,`last_modified`) values ('h9r8e0ss09pr6c1k2mdt0vpjp3','',1426823266),('rqkg932slmlh4u9jg2v7qqn486','randomString|s:4:\"VMQ8\";isLogin|s:3:\"yes\";',1426823283);
 
 /*Table structure for table `yd_admin` */
 

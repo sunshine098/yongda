@@ -59,8 +59,24 @@ class AdminManagerController extends PlatformController{
            $this->redirect('index.php?p=Admin&c=AdminManager&a=login','退出成功,系统将在2秒后自动退出!',2);
     }
     
-    public function modifyAction(){
+    /**
+     * 展示修改密码页面
+     */
+    public function showModifyAction(){
         $this->display('modify.html');
+    }
+    
+    /**
+     * 修改密码功能
+     */
+    public function modifyAction(){
+        $adminManagerModel = new AdminManagerModel();
+        $result= $adminManagerModel->modifyPass($_POST);
+        if($result){
+            $this->redirect('index.php?p=Admin&c=Index&a=right','修改密码成功了!',2);
+        }else{
+            $this->redirect('index.php?p=Admin&c=AdminManager&a=showModify','密码修改失败!',2);
+        }
     }
     
     
